@@ -1,4 +1,4 @@
-# AukroBlocker
+# AukroBlocker (0.11 Alpha)
 
 ## Toto je plugin pro prohlížeče Edge a Chrome, který umožní zablokovat vybrané prodejce na portálu Aukro.cz
 Plugin fungujhe tak, že prochází vystavené nabídky v seznamu a porovnává uživatelská jména prodejců s těmi, která jste zadali do seznamu. Plugin pak po načtení stránky zablokuje všechny nabídky, které mají tito uživatelé vystaveny na aktuální stránce.
