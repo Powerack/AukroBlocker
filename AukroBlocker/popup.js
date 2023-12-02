@@ -12,6 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
       blockedUsers.forEach(function (username) {
         addBlockedUserToSelect(username);
       });
+      document.getElementById("blockedUsersCount").textContent = blockedUsers.length;
     });
   }
 
