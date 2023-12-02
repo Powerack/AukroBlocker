@@ -7,14 +7,19 @@ chrome.storage.sync.get("blockEnabled", function (data) {
 
       function findAndHideBlockedOffers() {
         blockedUsers.forEach(function (username) {
-          var offerCards = document.querySelectorAll("auk-list-card");
+          var offerCards = document.querySelectorAll("auk-advanced-item-card");
           offerCards.forEach(function (offerCard) {
-            var usernameElement = offerCard.querySelector("a.small-user-name");
+            var usernameElement = offerCard.querySelector(".small-user-name");
             if (usernameElement && usernameElement.textContent.trim() === username) {
               offerCard.style.display = "none";
             }
           });
         });
+
+        var productScrollSlider = document.querySelector("advanced-item-card");
+        if (productScrollSlider) {
+          productScrollSlider.style.display = "none";
+        }
       }
 
       findAndHideBlockedOffers();
