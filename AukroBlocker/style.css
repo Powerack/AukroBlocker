@@ -1,5 +1,5 @@
 body {
-    width: 300px;
+    width: 400px;
     height: 100%;
     background-color: #fafafa;
     color: #0f0f0f;
@@ -11,6 +11,7 @@ body {
     margin: 0;
     border: 3px solid #fa8a0a;
     font-weight: 600;
+    font-size: 0.8em;
 }
 h1, h2, h3, h4, h5, h6 {
     color: #fa8a0a;
@@ -20,12 +21,13 @@ select, input, button {
     background-color: #fafafa;
     color: #0f0f0f;
     border: 1px solid #fa8a0a;
-    padding: 5px;
+    padding: 3px;
     margin: 3px 0;
     width: 90%;
     box-sizing: border-box;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 
 input {
@@ -36,6 +38,10 @@ button {
     color: #fa8a0a;
     font-weight: 800;
     text-transform: uppercase;
+}
+
+button:hover{
+    background-color: #0f0f0f;
 }
 
 hr {
@@ -58,4 +64,8 @@ a {
 select {
     max-height: 120px !important;
     overflow-y: auto;
+}
+
+auk-product-scroll-slider {
+    display: none !important;
 }
