@@ -1,26 +1,34 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Blokátor prodejců</title>
-        <link rel="stylesheet" href="style.css">
-        <script src="popup.js"></script>
-    </head>
-    <body>
-        <h2>Blokátor prodejců</h2>
-        Verze 0.12 Beta
-        <hr>
-        <p>Seznam zablokovaných prodejců (<span id="blockedUsersCount">0</span>):</p>
-        <select id="blockedUsersSelect"></select>
-        <button id="removeBlockedUser">Odebrat</button>
-        <hr>
-        <p>Pole pro přidání prodejce k blokování:</p>
-        <input type="text" id="newBlockedUser" placeholder="Zadejte uživatelské jméno">
-        <button id="addBlockedUser">Přidat</button>
-        <hr>
-        <label><input type="checkbox" id="blockSwitch" checked>Blokování zapnuto</label>
-        <hr>
-        <p>Distribuováno jako volně šiřitelný doplněk pro Edge a Chrome pod licencí <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a></p>
-        <p><a href="https://powerack.cz" target="_blank">Domovská stránka autora</a></p>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <title>Blokátor prodejců</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="popup.js"></script>
+</head>
+<body>
+    <h2>Blokátor prodejců</h2>
+    Verze 0.15
+    <hr>
+    <p>Seznam zablokovaných prodejců (<span id="blockedUsersCount">0</span>):</p>
+    <select id="blockedUsersSelect"></select>
+    <button id="removeBlockedUser">Odebrat</button>
+    <hr>
+    <p>Pole pro přidání prodejce k blokování:</p>
+    <input type="text" id="newBlockedUser" placeholder="Zadejte uživatelské jméno">
+    <button id="addBlockedUser">Přidat</button>
+    <hr>
+    <p>Seznam zablokovaných regulárních výrazů:</p>
+    <select id="blockedRegexSelect"></select>
+    <button id="removeBlockedRegex">Odebrat regulární výraz</button>
+    <hr>
+    <p>Pole pro přidání regulárního výrazu:</p>
+    <input type="text" id="newBlockedRegex" placeholder="Zadejte regulární výraz">
+    <button id="addBlockedRegex">Přidat regulární výraz</button>
+    <hr>
+    <label><input type="checkbox" id="blockSwitch" checked>Blokování zapnuto</label>
+    <hr>
+    <p>Distribuováno jako volně šiřitelný doplněk pro Edge a Chrome pod licencí <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a></p>
+    <p><a href="https://powerack.cz" target="_blank">Domovská stránka autora</a></p>
+</body>
 </html>
